@@ -98,6 +98,19 @@ The instanceof operator checks if an object is an instance of a specific class.
 ---
 
 ```ts
+class Animal {
+        name: string;
+        species: string;
+    
+        constructor(name: string, species: string) {
+          this.name = name;
+          this.species = species;
+        }
+    
+        makeSound() {
+          console.log("I am making sound");
+        }
+      }
 class Dog extends Animal {
   makeBark() {
     console.log("I am barking");
